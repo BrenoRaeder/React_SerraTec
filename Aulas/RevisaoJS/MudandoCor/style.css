@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    margin-top: 40vh;
+}
+
+button{
+    padding: 20px 50px;
+    font-family: monospace;
+    border: none;
+    margin: auto;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
