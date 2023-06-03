@@ -1,4 +1,4 @@
-import BotaoNum from './BotaoNum';
+import Curriculo from './Components/Curriculo/Curriculo';
 import './style.css';
 
 function App() {
@@ -6,10 +6,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>
-        Hello World!! :)
-      </h1>
-      <BotaoNum />
+      <Curriculo />
     </div>
   );
 }

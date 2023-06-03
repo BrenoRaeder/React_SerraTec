@@ -1,0 +1,27 @@
+.container-formacoes {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #e2dede;
+    margin: 20px auto;
+}
+
+.container-formacao {
+    background: #e2dede;
+    color: #1a1919;
+    margin: 20px auto;
+    width: 65vw;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    justify-content: flex-start;
+}
+
+h2, p {
+    margin: 10px 0;
+}

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './style.css'
 
 function BotaoNum () {
     const [num, setNum] = useState(0);
