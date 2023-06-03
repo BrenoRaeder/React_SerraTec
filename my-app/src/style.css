@@ -1,0 +1,36 @@
+body {
+    background: #88a8ac;
+    color: #131212;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.container {
+    margin: 50px auto;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.btn-num {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    background: #131212;
+    color: #ebe6e6;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    box-shadow: 1px 1px 10px #000;
+}
