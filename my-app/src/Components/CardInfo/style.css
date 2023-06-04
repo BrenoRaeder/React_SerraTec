@@ -6,6 +6,7 @@
     border-radius: 10px;
     border: 1px solid #e2dede;
     margin: 20px auto;
+    animation: infos 2s linear;
 }
 
 .container-formacao {
@@ -24,4 +25,9 @@
 
 h2, p {
     margin: 10px 0;
+}
+
+@keyframes infos {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }

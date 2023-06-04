@@ -37,7 +37,7 @@ function Curriculo() {
         <div>
             <InformacoesPessoais />
             <CardInfo titulo="📓Formação"  infos={formacoes} />
-            <CardInfo titulo="🔨Experiência Profissional" infos={experiencias}/> 
+            <CardInfo id="experiencias" titulo="🔨Experiência Profissional" infos={experiencias}/> 
         </div>
     )
 }
