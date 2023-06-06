@@ -1,0 +1,19 @@
+.container-card {
+    width: auto;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    padding: 5px;
+    background: #181414;
+    color: #fff;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.container-card img {
+    border-radius: 50%;
+    width: 85%;
+    
+}
