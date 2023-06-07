@@ -1,0 +1,9 @@
+#containerHeader {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+h3 {
+    cursor: pointer;
+}
