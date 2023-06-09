@@ -1,5 +1,10 @@
 import { useState, useEffect } from 'react'
-import './style.css';
+import {
+    Container,
+    TitleContainer,
+    ContentContainer,
+    PokeCard,
+} from "./style";
 import pokemonData from "../../mock/data.json"
 
 function Home() {
@@ -31,13 +36,13 @@ function Home() {
     }, [])
 
     return (
-        <div id="container">
-            <header id='titleContainer'>
+        <Container>
+            <TitleContainer id='titleContainer'>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png"></img>
                 <h1>Pokedex</h1>
-            </header>
+            </TitleContainer>
 
-            <div id="contentContainer">
+            <ContentContainer  loading={isLoading}>
                 {
                     isLoading ? (
                         <h3 id="loading">Carregando...</h3>
@@ -45,17 +50,17 @@ function Home() {
                     :
                     pokemons.map(pokemon => {
                         return (
-                            <div className="pokeCard" key={pokemon.newId}>
+                            <PokeCard key={pokemon.newId} pokemonType={pokemon.type[0]}>
                                 <img src={`https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokemon.newId}.png`}/>
                                 <h3>{pokemon.name.english}</h3>
                                 <span>{pokemon.type[0]}</span>
-                            </div>
+                            </PokeCard>
                         )
                     })
                 }
                 
-            </div>
-        </div>
+            </ContentContainer>
+        </Container>
     )
 }
 
