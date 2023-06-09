@@ -1,5 +1,13 @@
 import { Outlet, useNavigate } from 'react-router-dom';
-import './style.css';
+import { 
+    Container,
+    LeftContainer,
+    LogoContainer,
+    NavList,
+    NavItem,
+    RightContainer,
+    ProfileContainer
+} from './style.js';
 
 function Header() {
 
@@ -14,14 +22,31 @@ function Header() {
     }
 
     return (
-        <div>
-            <div id="containerHeader">
-                <h3 onClick={() => goToHome()}>Home</h3>
-                <h3 onClick={() => goToAbout()}>About</h3>
-            </div>
-            
+        <>
+            <Container>
+                <LeftContainer>
+                    <LogoContainer>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png" />
+                        <span><span id="my">My</span>Pokedex</span>
+                    </LogoContainer>
+
+                    <NavList>
+                        <NavItem onClick={() => goToHome()}>Home</NavItem>
+                        <NavItem onClick={() => goToAbout()}>About</NavItem>
+                    </NavList>
+                </LeftContainer>
+                
+                <RightContainer>
+                    <ProfileContainer>
+                        <span>Welcome, Breno</span>
+                        <img src="https://avatars.githubusercontent.com/u/69677453?v=4"/>
+                    </ProfileContainer>
+                </RightContainer>
+                
+            </Container>
             <Outlet />
-        </div>
+        </>
+        
     )
 }
 
