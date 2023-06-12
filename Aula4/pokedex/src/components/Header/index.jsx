@@ -13,12 +13,8 @@ function Header() {
 
     const navigate = useNavigate();
 
-    function goToHome() {
-        navigate('/');
-    }
-
-    function goToAbout() {
-        navigate('/about');
+    function goTo(url) {
+        navigate(url);
     }
 
     return (
@@ -31,8 +27,9 @@ function Header() {
                     </LogoContainer>
 
                     <NavList>
-                        <NavItem onClick={() => goToHome()}>Home</NavItem>
-                        <NavItem onClick={() => goToAbout()}>About</NavItem>
+                        <NavItem onClick={() => goTo('/')}>Home</NavItem>
+                        <NavItem onClick={() => goTo('/about')}>About</NavItem>
+                        <NavItem onClick={() => goTo('/login')}>Login</NavItem>
                     </NavList>
                 </LeftContainer>
                 
